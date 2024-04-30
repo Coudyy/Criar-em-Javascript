@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="elementoId">ESSA COR É VERMELHA</div>
+    <div type="text" name="felipeGiga">felipe</div>
+    <div class="class1">essafrasetemvarioscaracteres</div>
+</body>
+
+<script>//Mensagem de 'Olá Mundo'
+    console.log('Olá Mundo');
+    
+    //Saída de soma de 2
+    let num1 = 5;
+    let num2 = 7;
+    let soma = num1 + num2;
+    console.log('A soma de', num1, 'e', num2, 'é igual a', soma);
+    
+    // elemento por id
+    document.getElementById('elementoId').style.color = 'red';
+    
+    // elemento por name
+    let elementos = document.getElementsByName('felipeGiga');
+    for (let i = 0; i < elementos.length; i++) {
+    elementos[i].style.fontSize = '200px';
+    }
+    
+    
+    // elemento por class
+    let elementosClasse = document.getElementsByClassName('class1');
+    for (let i = 0; i < elementosClasse.length; i++) {
+        elementosClasse[i].style.backgroundColor = 'yellow';
+    }
+    </script>
+</html>
