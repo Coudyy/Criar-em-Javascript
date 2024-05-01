@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.button{
+    padding: 0px;
+    margin: 0px;
+}
+
+.divAltere{
+    margin: 20px;
+    padding: 20px;
+    width: 450px;
+    height: 300px;
+    border: 3px solid #030303;
+    border-radius: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 10px; /* Espaçamento entre os itens */
+}
+
+.container label {
+    flex: 1; /* Ocupa todo o espaço disponível */
+    text-align: right;
+}
+
+.container input {
+    flex: 2; /* Ocupa mais espaço */
+}

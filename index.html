@@ -3,37 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
+
 <body>
-    <div id="elementoId">ESSA COR É VERMELHA</div>
-    <div type="text" name="felipeGiga">felipe</div>
-    <div class="class1">essafrasetemvarioscaracteres</div>
+    <h2>Clique aqui e receba um "OLÁ MUNDO!"</h2>
+    <button onclick="olaMundo()">Clique aqui</button>
+
+
+    <div class="container">
+        <label for="numero1">Número 1:</label>
+        <input type="text" id="numero1">
+
+        <label for="numero2">Número 2:</label>
+        <input type="text" id="numero2">
+
+        <button onclick="resultadoConta()">resultado</button>
+    </div>
+
+    <div class="divAltere">
+        <h2 id="Botão1">Clique para alterar por id</h2>
+        <button class="button" onclick="alterarPorId()"> Clique aqui </button>
+
+        <h2 name="Botão2">Clique para alterar por name</h2>
+        <button class="button" onclick="alterarPorName()">Clique aqui</button>
+
+        <h2 class="Botão3">Clique para alterar por class</h2>
+        <button class="button" onclick="alterarPorClass()">Clique aqui</button>
+    </div>
 </body>
 
-<script>//Mensagem de 'Olá Mundo'
-    console.log('Olá Mundo');
-    
-    //Saída de soma de 2
-    let num1 = 5;
-    let num2 = 7;
-    let soma = num1 + num2;
-    console.log('A soma de', num1, 'e', num2, 'é igual a', soma);
-    
-    // elemento por id
-    document.getElementById('elementoId').style.color = 'red';
-    
-    // elemento por name
-    let elementos = document.getElementsByName('felipeGiga');
-    for (let i = 0; i < elementos.length; i++) {
-    elementos[i].style.fontSize = '200px';
-    }
-    
-    
-    // elemento por class
-    let elementosClasse = document.getElementsByClassName('class1');
-    for (let i = 0; i < elementosClasse.length; i++) {
-        elementosClasse[i].style.backgroundColor = 'yellow';
-    }
-    </script>
 </html>
